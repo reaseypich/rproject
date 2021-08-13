@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{font-family: monospace;
+        text-align:center;
+        font-weight: lighter;
+        padding-top:15%}
+        .loader {
+            border: 12px solid #dfdfdf;
+            border-radius: 50%;
+            border-bottom: 12px solid rgb(158, 158, 158);
+            width: 50px;
+            height: 50px;
+            -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+            float: left;
+            margin-left: 50%;
+            margin-top: 40px;
+                        }
+        .home {float: left; margin-left: 10px;}
+        .box{width: 100%; 
+            float: left; 
+            background-color:white;}
+        .box ul li {width: 120px; 
+            float: left; 
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 10px;
+            padding-bottom: 20px;}
+        .box ul li a {text-decoration:  none; 
+            color: rgb(104, 104, 104);
+            font-size: 18px;
+            text-align: center;}
+        .box ul li:hover{background-color: rgb(201, 201, 201);
+            padding: 10px;}
+        .box ul li a:hover {color: white;}
+
+        /* Safari */
+        @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+        /* unvisited link */
+        a:link {
+                    color: rgb(0, 0, 0);
+                    }
+
+            /* visited link */
+            a:visited {
+                color: rgb(0, 0, 0);
+                }
+
+            /* mouse over link */
+            a:hover {
+                color: rgb(121, 128, 105);
+                }
+            a:link {
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <div class ="box">
+        <ul>
+            <div class="home"><li style="list-style-type:none;"> <a href="index.html">Home </a></li></div>
+        </ul>
+    </div>
+    <a href="sub.html"><h1>This webpage is still underconstruction...</h1></a>
+    <div class="loader"></div>
+</body>
+</html>
